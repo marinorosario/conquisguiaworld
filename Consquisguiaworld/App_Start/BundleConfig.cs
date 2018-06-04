@@ -25,6 +25,11 @@ namespace Consquisguiaworld
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            //site assets
+            bundles.Add(new ScriptBundle("~/bundles/site/jquerymigrate").Include("~/Scripts/site/jquery-migrate-3.0.0.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/site/sitescripts").Include("~/Scripts/site/jquery.desoslide.js", "~/Scripts/site/jquery.flexisel.js", "~/Scripts/site/move-top.js"));
+            bundles.Add(new StyleBundle("~/Content/site/sitestyles").Include("~/Content/site/css/jquery.desoslide.css", "~/Content/site/css/style.css", "~/Content/site/css/style.css", "~/Content/site/css/fontawesome-all.css"));
         }
     }
 }
