@@ -1,2 +1,0 @@
-C:\Users\Sandro Nash\source\repos\conquisguiaworld\Consquisguiaworld.Tests\obj\Debug\Consquisguiaworld.Tests.csprojAssemblyReference.cache
-C:\Users\Sandro Nash\source\repos\conquisguiaworld\Consquisguiaworld.Tests\obj\Debug\Consquisguiaworld.Tests.csproj.CoreCompileInputs.cache

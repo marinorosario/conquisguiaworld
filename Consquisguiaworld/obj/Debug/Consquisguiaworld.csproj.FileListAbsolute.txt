@@ -259,8 +259,8 @@ C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\bin\es\Enti
 C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
 C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
 C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\obj\Debug\Consquisguiaworld.csprojAssemblyReference.cache
 C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\obj\Debug\Consquisguiaworld.csproj.CoreCompileInputs.cache
 C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\obj\Debug\Consquisguiaworld.csproj.CopyComplete
 C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\obj\Debug\Consquisguiaworld.dll
 C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\obj\Debug\Consquisguiaworld.pdb
+C:\Users\Sandro Nash\Source\Repos\conquisguiaworld\Consquisguiaworld\obj\Debug\Consquisguiaworld.csprojAssemblyReference.cache

@@ -357,6 +357,8 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Views\Shared\_SliderPartial.cshtml" />
+    <Content Include="Views\Shared\_ShowRoom.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

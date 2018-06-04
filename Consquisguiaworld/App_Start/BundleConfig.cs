@@ -29,7 +29,8 @@ namespace Consquisguiaworld
             //site assets
             bundles.Add(new ScriptBundle("~/bundles/site/jquerymigrate").Include("~/Scripts/site/jquery-migrate-3.0.0.min.js"));            
             bundles.Add(new ScriptBundle("~/bundles/site/sitescripts").Include("~/Scripts/site/jquery.flexisel.js", "~/Scripts/site/move-top.js", "~/Scripts/site/easing.js"));
-            
+            bundles.Add(new StyleBundle("~/Content/site/contactcss").Include("~/Content/site/css/contact.css"));
+
             bundles.Add(new StyleBundle("~/Content/site/sitestyles").Include("~/Content/site/css/style.css", "~/Content/site/css/fontawesome-all.css"));
 
             //desoslide
