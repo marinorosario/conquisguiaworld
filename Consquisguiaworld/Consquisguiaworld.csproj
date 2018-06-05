@@ -313,6 +313,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Views\templates\blog2.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -359,6 +360,9 @@
     <Content Include="Views\Shared\_FooterPartial.cshtml" />
     <Content Include="Views\Shared\_SliderPartial.cshtml" />
     <Content Include="Views\Shared\_ShowRoom.cshtml" />
+    <Content Include="Views\templates\single.cshtml" />
+    <Content Include="Views\templates\blog1.cshtml" />
+    <Content Include="Views\templates\blog3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
