@@ -1,31 +1,22 @@
 ﻿@using Microsoft.AspNet.Identity
-
-<div class="col-md-4 top-forms text-center mt-lg-3 mt-md-1 mt-0">
-
-    @if (Request.IsAuthenticated)
+@if (Request.IsAuthenticated)
+{
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
     {
-        using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
-        {
-            @Html.AntiForgeryToken()
-            <span> @Html.ActionLink("Bienvenido de vuelta! " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</span>
-            <span><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></span>
+    @Html.AntiForgeryToken()
 
-        }
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("Hola " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+        </li>
+        <li><a href="javascript:document.getElementById('logoutForm').submit()">Cerrar sesión</a></li>
+    </ul>
     }
-    else
-    {
-        @*@Html.ActionLink("Iniciar sesión", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })*@
-        <span class="mx-lg-4 mx-md-2  mx-1">
-            <a href="@Url.Action("Login", "Account")" id = "loginLink">
-                <i class="fas fa-lock"></i> Entrar
-            </a>
-        </span>
-
-        @*@Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })*@
-        <span>
-            <a href="@Url.Action("Register", "Account")" id = "registerLink">
-                <i class="far fa-user"></i> Registrarse
-            </a>
-        </span>
-    }
-</div>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>@Html.ActionLink("Registrarse", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Iniciar sesión", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+    </ul>
+}

@@ -3,68 +3,39 @@
     ViewBag.Title = "Registrarse";
 }
 
-<!--/banner-->
-<div class="banner-inner">
-</div>
-<ol class="breadcrumb">
-    <li class="breadcrumb-item">
-        @Html.ActionLink("Home", "Index", "Home")
-    </li>
-    <li class="breadcrumb-item active">Registro de usuario</li>
-</ol>
-<!--//banner-->
+<h2>@ViewBag.Title.</h2>
 
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
-    @Html.AntiForgeryToken()    
+    @Html.AntiForgeryToken()
+    <h4>Cree una cuenta nueva.</h4>
+    <hr />
     @Html.ValidationSummary("", new { @class = "text-danger" })
-    <!--/main-->
-    <section class="main-content-w3layouts-agileits">
-        <div class="container">
-            <h3 class="tittle">Formulario de Registro</h3>
-            <div class="inner-sec">
-                <div class="login p-5 bg-light mx-auto mw-100">
-                    <form action="#" method="post">
-                        <div class="form-row">
-                            <div class="col-md-6 mb-3">
-                                @Html.LabelFor(m => m.Email)                                                                
-                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @id = "validationDefault01" })
-                            </div>
-                            <div class="col-md-6 mb-3">
-                                <label for="validationCustom02">Last name</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="" required="">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-md-6">
-                                @Html.LabelFor(m => m.Password)
-                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "password1" })
-                            </div>
-                            <div class="form-group col-md-6">
-                                @Html.LabelFor(m => m.ConfirmPassword)
-                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @id = "password2" })
-                            </div>
-
-                        </div>
-                        <button type="submit" class="btn btn-primary submit mb-4">Registrarse</button>
-                        <p>
-                            <a href="#">By clicking Signup, I agree to your terms</a>
-                        </p>
-                    </form>
-
-                </div>
-            </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
         </div>
-    </section>
-    <!--//main-->
-
-
-
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+        <div class="col-md-10">
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Registrarse" />
+        </div>
+    </div>
 }
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
-
-
-
